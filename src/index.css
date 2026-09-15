@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #08070e;
+    color: #ffffff;
+  }
+}
+
+/* Custom dark glow backdrop */
+.hero-glow-backdrop {
+  background: radial-gradient(circle at 50% 0%, rgba(94, 23, 235, 0.35) 0%, rgba(33, 0, 122, 0.15) 45%, rgba(8, 7, 14, 0) 80%);
+}
+
+.purple-ambient-card {
+  background: linear-gradient(135deg, rgba(94, 23, 235, 0.12) 0%, rgba(19, 17, 28, 0.95) 100%);
+  border: 1px solid rgba(94, 23, 235, 0.3);
+}
+
+.featured-active-card {
+  background: linear-gradient(135deg, #5e17eb 0%, #470bbd 100%);
+  border: 1px solid #7a28f5;
+  box-shadow: 0 10px 30px -5px rgba(94, 23, 235, 0.4);
+}
+
+/* Leaflet map dark styling overrides */
+.leaflet-popup-content-wrapper {
+  background-color: #13111c;
+  color: #ffffff;
+  border: 1px solid #2e2847;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  padding: 4px;
+}
+
+.leaflet-popup-tip {
+  background-color: #13111c;
+}
+
+.leaflet-popup-content {
+  margin: 12px 14px;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+/* Hide scrollbars on chip carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

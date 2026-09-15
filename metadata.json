@@ -1,0 +1,6 @@
+{
+  "name": "BeyondTrip",
+  "description": "An AI-powered travel planner that compares transportation options, recommends nearby places, and discovers budget-friendly accommodation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
